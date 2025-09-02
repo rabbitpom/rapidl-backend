@@ -4,4 +4,4 @@ rapidl delivers personalized practice questions tailored just for you, providing
 
 ## Notice
 
-This is a private repository, which holds the backend codebase for rapidl.
+This used to be a private repository, which holds the backend codebase for rapidl.
