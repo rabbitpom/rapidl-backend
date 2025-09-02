@@ -1,0 +1,11 @@
+pub mod signup;
+pub mod login;
+pub mod get_profile;
+pub mod subscribe_newsletter;
+pub mod verify;
+pub mod send_verification;
+pub mod ignore;
+pub mod generate;
+pub mod generated;
+pub mod admin;
+pub mod contact;

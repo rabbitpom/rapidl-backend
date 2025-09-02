@@ -1,0 +1,16 @@
+[package]
+name = "aws-lambda-accounts-generate-retry"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = { version = "0.6.4", features = ["macros"] }
+lambda-web = { version = "0.2.1", features = ["hyper"] }
+tower = "0.4.13"
+tokio = { version = "1.35.0", default-features = false, features = ["macros", "rt-multi-thread"] }
+tracing = { version = "0.1.40", features = ["log"] }
+tracing-subscriber = { version = "0.3.18", default-features = false, features = ["fmt"] }
+common-types = { path = "../common-types" }
+common-types-accounts = { path = "../common-types-accounts" }

@@ -1,0 +1,31 @@
+[package]
+name = "aws-lambda-generate"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = "1.1.7"
+aws-sdk-s3 = "1.17.0"
+aws-sdk-sqs = "1.15.0"
+aws_lambda_events = "0.15.0"
+chrono = "0.4.31"
+diesel = { version = "2.1.4", features = ["chrono", "uuid"] }
+diesel-async = { version = "0.4.1", features = ["postgres", "deadpool"] }
+deadpool-redis = { version = "0.14.0", feautres = ["rt_tokio_1"] }
+dotenvy = "0.15.7"
+lambda_runtime = "0.10.0"
+lazy_static = "1.4.0"
+flate2 = { version = "1.0.30", features = ["zlib"] }
+openssl = { version = "0.10.61", features = ["vendored"] }
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.114"
+rmp-serde = "1.3.0"
+rand = "0.8.5"
+uuid = { version = "1.6.1", features = ["fast-rng", "v4"] }
+tokio = { version = "1.35.0", default-features = false, features = ["macros", "rt-multi-thread"] }
+tracing = { version = "0.1.40", features = ["log"] }
+tracing-subscriber = { version = "0.3.18", default-features = false, features = ["fmt"] }
+common-types = { path = "../common-types" }
+common-types-accounts = { path = "../common-types-accounts" }

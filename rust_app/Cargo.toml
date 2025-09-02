@@ -1,0 +1,35 @@
+[workspace]
+
+resolver = "2"
+members = [
+    "db-schema",
+    "common-types",
+    "common-types-accounts",
+    "aws-lambda-accounts-sign-up",
+    "aws-lambda-accounts-sign-out",
+    "aws-lambda-accounts-verify",
+    "aws-lambda-accounts-send-verification-email",
+    "aws-lambda-accounts-login",
+    "aws-lambda-accounts-refresh-tokens",
+    "aws-lambda-accounts-get-profile",
+    "aws-lambda-accounts-subscribe-newsletter",
+    "aws-lambda-accounts-generate",
+    "aws-lambda-accounts-generate-retry",
+    "aws-lambda-accounts-get-generated-list",
+    "aws-lambda-accounts-get-generated-content",
+    "aws-lambda-email-bulk-sender",
+    "aws-lambda-email-bounce-complaint-handler",
+    "aws-lambda-email-contacts-subscriber",
+    "aws-lambda-email-support-response-handler",
+    "aws-lambda-generate", 
+    "aws-lambda-admin-support-list-ticket",
+    "aws-lambda-admin-support-ticket",
+    "aws-lambda-support-send-contact",
+]
+
+
+[profile.release]
+
+strip = true
+lto = true
+
